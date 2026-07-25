@@ -24,6 +24,7 @@ const SocialButton = () => {
   const CONTACT_XIAOHONGSHU = siteConfig('CONTACT_XIAOHONGSHU')
   const CONTACT_ZHISHIXINGQIU = siteConfig('CONTACT_ZHISHIXINGQIU')
   const CONTACT_WEHCHAT_PUBLIC = siteConfig('CONTACT_WEHCHAT_PUBLIC')
+  const CONTACT_LINKTREE = siteConfig('CONTACT_LINKTREE')
   
 
   const [qrCodeShow, setQrCodeShow] = useState(false)
@@ -130,6 +131,21 @@ const SocialButton = () => {
             <i className='transform hover:scale-125 duration-150 fab fa-youtube dark:hover:text-indigo-400 hover:text-indigo-600' />
           </a>
         )}
+        {CONTACT_LINKTREE && (
+          <a
+            target='_blank'
+            rel='noreferrer'
+            title={'Linktree'}
+            href={CONTACT_LINKTREE}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              className='transform hover:scale-125 duration-150 w-6'
+              src='/svg/linktree.svg'
+              alt='Linktree'
+            />
+          </a>
+        )}
+
         {CONTACT_XIAOHONGSHU && (
           <a
             target='_blank'
