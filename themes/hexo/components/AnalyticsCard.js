@@ -5,7 +5,7 @@ export function AnalyticsCard (props) {
   const { postCount, wordCount } = props
 
   // 建站日期
-  const targetDate = new Date('2026-07-24')
+  const targetDate = new Date('2026-07-24T00:00:00+08:00')
   const today = new Date()
 
   const diffTime = today.getTime() - targetDate.getTime()
