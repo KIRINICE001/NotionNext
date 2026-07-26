@@ -13,15 +13,6 @@ export function AnalyticsCard (props) {
           <div>{postCount}</div>
         </div>
       </div>
-
-    <div className='text-xs  font-light justify-center mx-7'>
-      <div className='inline'>
-        <div className='flex justify-between'>
-          <div>建站天数:</div>
-          <div>{diffDays}</div>
-        </div>
-      </div>
-
       <div className='hidden busuanzi_container_page_pv ml-2'>
         <div className='flex justify-between'>
           <div>访问量:</div>
