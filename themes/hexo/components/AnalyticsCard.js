@@ -26,12 +26,6 @@ export function AnalyticsCard (props) {
 
 
       <div className='flex justify-between'>
-        <div>总字数:</div>
-        <div>{wordCount || 0}</div>
-      </div>
-
-
-      <div className='flex justify-between'>
         <div>运行时间:</div>
         <div>{diffDays} 天</div>
       </div>
