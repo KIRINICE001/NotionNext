@@ -28,14 +28,14 @@ export function AnalyticsCard (props) {
 
   return (
     <Card>
-      {/* 头部标题区域（保持原有 UI 样式） */}
+      /* 头部标题区域（保持原有 UI 样式） */
       <div className='ml-2 mb-3 '>
         <i className='fas fa-chart-area' /> 统计
       </div>
 
-      {/* 统计列表（保持原有 text-xs font-light 样式） */}
+      /* 统计列表（保持原有 text-xs font-light 样式） */
       <div className='text-xs font-light justify-center mx-7'>
-        {/* 文章数 */}
+        /* 文章数 */
         <div className='inline'>
           <div className='flex justify-between'>
             <div>文章数:</div>
@@ -43,7 +43,7 @@ export function AnalyticsCard (props) {
           </div>
         </div>
 
-        {/* 新增：全站字数 */}
+        /* 新增：全站字数 */
         <div className='inline'>
           <div className='flex justify-between mt-1'>
             <div>全站字数:</div>
@@ -51,7 +51,7 @@ export function AnalyticsCard (props) {
           </div>
         </div>
 
-        {/* 新增：运行天数 */}
+        /* 新增：运行天数 */
         <div className='inline'>
           <div className='flex justify-between mt-1'>
             <div>建站天数:</div>
@@ -59,7 +59,7 @@ export function AnalyticsCard (props) {
           </div>
         </div>
 
-        {/* 访问量（不蒜子统计，保持原有类名与结构） */}
+        /* 访问量（不蒜子统计，保持原有类名与结构） */
         <div className='hidden busuanzi_container_page_pv ml-2'>
           <div className='flex justify-between mt-1'>
             <div>访问量:</div>
@@ -67,7 +67,7 @@ export function AnalyticsCard (props) {
           </div>
         </div>
 
-        {/* 访客数（不蒜子统计，保持原有类名与结构） */}
+        /* 访客数（不蒜子统计，保持原有类名与结构） */
         <div className='hidden busuanzi_container_site_uv ml-2'>
           <div className='flex justify-between mt-1'>
             <div>访客数:</div>
