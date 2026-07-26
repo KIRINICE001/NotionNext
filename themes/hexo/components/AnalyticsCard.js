@@ -5,7 +5,7 @@ export function AnalyticsCard (props) {
   const { postCount, wordCount } = props
 
   // 建站日期
-  const targetDate = new Date('2026-07-01')
+  const targetDate = new Date('2026-07-24')
   const today = new Date()
 
   const diffTime = today.getTime() - targetDate.getTime()
@@ -17,7 +17,7 @@ export function AnalyticsCard (props) {
       <i className='fas fa-chart-area' /> 统计
     </div>
 
-    <div className='text-xs font-light justify-center mx-7'>
+    <div className='text-base font-light justify-center mx-7'>
 
       <div className='flex justify-between'>
         <div>文章数:</div>
