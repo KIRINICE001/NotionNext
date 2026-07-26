@@ -32,6 +32,9 @@ const FaceBookPage = dynamic(
  * @returns
  */
 export default function SideRight(props) {
+
+  console.log(props)
+  
   const {
     post,
     currentCategory,
