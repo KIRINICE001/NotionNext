@@ -7,7 +7,7 @@ export function AnalyticsCard (props) {
   // ================= 1. 建站天数计算 =================
   // 默认读取 site.config.js 中的 SINCE 年份（如 2023）
   // 💡 如果想精确到具体日期，可以直接把下面这行改为例如: const startDateStr = '2023-05-20'
-  const startDateStr = siteConfig('SINCE') ? ${siteConfig('SINCE')}-01-01 : '2023-01-01'
+  const startDateStr = siteConfig('SINCE') ? ${siteConfig('SINCE')}-01-01 : '2026-07-24'
   
   const startDate = new Date(startDateStr)
   const today = new Date()
