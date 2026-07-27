@@ -52,7 +52,7 @@ const Footer = ({ title }) => {
     className='font-bold dark:text-gray-300 hover:text-gray-400 transition-colors'
   >
     {title}
-  </a> <i className='fas fa-paw mx-1' /> {siteConfig('BIO')}
+  </a><i className='fas fa-paw mx-1' />{siteConfig('BIO')}
       </div>
 
       {/* 第五行：Powered By */}
