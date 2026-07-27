@@ -15,7 +15,7 @@ const Footer = ({ title }) => {
       {/* <DarkModeButton/> */}
       {/* 第一行：版权 */}
       <div className='text-base'>
-        Copyright © {copyrightDate} by 
+        Copyright © {copyrightDate}{' '}
       <span>
         <a
           href='/aboutme'
