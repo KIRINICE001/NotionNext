@@ -23,6 +23,7 @@ const Footer = ({ title }) => {
           className='font-bold dark:text-gray-300 hover:text-gray-400 transition-colors'>
           {siteConfig('AUTHOR')}
         </a>
+        </span>
       </div>
 
       {/* 第二行：统计 */}
@@ -57,7 +58,6 @@ const Footer = ({ title }) => {
 
     </footer>
   )
-}
 }
 
 export default Footer
