@@ -15,11 +15,10 @@ const Footer = ({ title }) => {
       {/* <DarkModeButton/> */}
       {/* 第一行：版权 */}
       <div className='text-base'>
-        <i className='fas fa-copyright mr-1' />{copyrightDate}
+        Copyright © {copyrightDate}
       <span>
-        <i className='fas fa-paw mx-1' />
         <a
-          href={siteConfig('LINK')}
+          href='/aboutme'
           className='font-bold dark:text-gray-300 hover:text-gray-400 transition-colors'>
           {siteConfig('AUTHOR')}
         </a>
@@ -48,7 +47,12 @@ const Footer = ({ title }) => {
 
       {/* 第四行：简介 */}
       <div className='mt-4 text-base text-gray-500 dark:text-gray-400'>
-         {title} {siteConfig('BIO') && <>|</>} {siteConfig('BIO')}
+         <a
+    href={siteConfig('LINK')}
+    className='font-bold dark:text-gray-300 hover:text-gray-400 transition-colors'
+  >
+    {title}
+  </a> <i className='fas fa-paw mx-1' /> {siteConfig('BIO')}
       </div>
 
       {/* 第五行：Powered By */}
