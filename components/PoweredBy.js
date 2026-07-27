@@ -10,7 +10,7 @@ export default function PoweredBy(props) {
       <span className='mr-1'>Powered by</span>
       <a
         href='https://github.com/tangly1024/NotionNext'
-        className='text-gray-400 hover:text-gray-600 transition-colors'>
+        className='font-bold dark:text-gray-300 hover:text-gray-400 transition-colors'>
         NotionNext {siteConfig('VERSION')}
       </a>
       .
