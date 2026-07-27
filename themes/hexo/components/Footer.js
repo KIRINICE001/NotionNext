@@ -11,35 +11,53 @@ const Footer = ({ title }) => {
     parseInt(since) < currentYear ? since + '-' + currentYear : currentYear
 
   return (
-    <footer className='relative z-10 dark:bg-black flex-shrink-0 bg-hexo-light-gray justify-center text-center m-auto w-full leading-6  text-gray-600 dark:text-gray-100 text-sm p-6'>
+    <footer className='relative z-10 dark:bg-black flex-shrink-0 bg-hexo-light-gray justify-center text-center m-auto w-full leading-8 text-gray-600 dark:text-gray-200 py-10 px-6 '>
       {/* <DarkModeButton/> */}
-      <i className='fas fa-copyright' /> {`${copyrightDate}`}
+      {/* 第一行：版权 */}
+      <div className='text-base'>
+        <i className='fas fa-copyright mr-1' />{copyrightDate}
       <span>
-        <i className='mx-1 animate-pulse fas fa-heart' />
+        <i className='fas fa-paw mx-1' />
         <a
           href={siteConfig('LINK')}
-          className='underline font-bold  dark:text-gray-300 '>
+          className='font-bold dark:text-gray-300 hover:text-gray-400 transition-colors'>
           {siteConfig('AUTHOR')}
         </a>
-        .<br />
+      </div>
+
+      {/* 第二行：统计 */}
+      <div className='mt-3 text-base'>
+        <span className='hidden busuanzi_container_site_pv'>
+          <i className='fas fa-eye mr-1' />
+          <span className='busuanzi_value_site_pv' />
+        </span>
+
+        <span className='ml-6 hidden busuanzi_container_site_uv'>
+          <i className='fas fa-users mr-1' />
+          <span className='busuanzi_value_site_uv' />
+        </span>
+
+      </div>
+
+      {/* 第三行：备案 */}
+      <div className='mt-3 text-base'>
         <BeiAnSite />
         <BeiAnGongAn />
-        <span className='hidden busuanzi_container_site_pv'>
-          <i className='fas fa-eye' />
-          <span className='px-1 busuanzi_value_site_pv'> </span>
-        </span>
-        <span className='pl-2 hidden busuanzi_container_site_uv'>
-          <i className='fas fa-users' />
-          <span className='px-1 busuanzi_value_site_uv'> </span>
-        </span>
-        <h1 className='text-xs pt-4 text-light-400 dark:text-gray-400'>
-          {title} {siteConfig('BIO') && <>|</>} {siteConfig('BIO')}
-        </h1>
+      </div>
+
+      {/* 第四行：简介 */}
+      <div className='mt-4 text-base text-gray-500 dark:text-gray-400'>
+         {title} {siteConfig('BIO') && <>|</>} {siteConfig('BIO')}
+      </div>
+
+      {/* 第五行：Powered By */}
+      <div className='mt-4 text-sm text-gray-400 dark:text-gray-500'>
         <PoweredBy className='justify-center' />
-      </span>
-      <br />
+      </div>
+
     </footer>
   )
+}
 }
 
 export default Footer
