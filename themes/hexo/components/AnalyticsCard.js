@@ -24,6 +24,10 @@ export function AnalyticsCard (props) {
         <div>{postCount}</div>
       </div>
 
+      <div className='flex justify-between'>
+        <div>总字數:</div>
+        <div>{wordCount}</div>
+      </div>
 
       <div className='flex justify-between'>
         <div>運行時間:</div>
