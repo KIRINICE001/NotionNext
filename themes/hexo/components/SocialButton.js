@@ -137,7 +137,7 @@ const SocialButton = () => {
             rel='noreferrer'
             title={'Linktree'}
             href={CONTACT_LINKTREE}>
-            <i className='transform hover:scale-125 duration-150 <i class="fa-brands fa-linktree"></i> dark:hover:text-indigo-400 hover:text-indigo-600' />
+            <i className='transform hover:scale-125 duration-150 fa-brands fa-linktree dark:hover:text-indigo-400 hover:text-indigo-600' />
           </a>
         )}
 
