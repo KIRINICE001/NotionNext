@@ -137,12 +137,7 @@ const SocialButton = () => {
             rel='noreferrer'
             title={'Linktree'}
             href={CONTACT_LINKTREE}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              className='transform hover:scale-125 duration-150 w-6'
-              src='/svg/linktree.svg'
-              alt='Linktree'
-            />
+            <i className='transform hover:scale-125 duration-150 fab fa-linktree dark:hover:text-indigo-400 hover:text-indigo-600' />
           </a>
         )}
 
