@@ -27,7 +27,6 @@ const SocialButton = () => {
   const CONTACT_WEHCHAT_PUBLIC = siteConfig('CONTACT_WEHCHAT_PUBLIC')
   const CONTACT_LINKTREE = siteConfig('CONTACT_LINKTREE')
   
-
   const [qrCodeShow, setQrCodeShow] = useState(false)
 
   const openPopover = () => {
